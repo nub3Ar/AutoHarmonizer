@@ -21,6 +21,9 @@ Check out some of the harmonization produced by our model:
 
 ### Experiment Setup
 * Dataset  
+![dataset example](../dataformat.png)  
+ Music Format:
+ []
  The original dataset used in the paper can be found [here](http://marg.snu.ac.kr/chord_generation/#)
 * Model
 * Loss Function/Error Measure
