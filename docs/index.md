@@ -23,12 +23,12 @@ We would like to build an automatic melody harmonizer from lead sheet music that
 ### Our Project
 
 ### Experiment Setup
-* Dataset  
+* **Dataset**  
 ![dataset example](https://github.com/nub3Ar/AutoHarmonizer/blob/main/dataformat.png)  
 The dataset we are using is from a [paper](https://arxiv.org/ftp/arxiv/papers/1712/1712.01011.pdf) by the Music & Audio Research Group. The dataset consists of 2252 Western songs from many different genres. They are stored in lead sheet formats like shown in the image above. For our purposes, the only features we are considering are the key_mode and the note_root.
  The original dataset used in the paper can be found [here](http://marg.snu.ac.kr/chord_generation/#)
-* Model
-* Loss Function/Error Measure
+* **Model**
+* **Loss Function**
 
 ### Results
 
