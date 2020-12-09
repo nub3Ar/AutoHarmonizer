@@ -20,7 +20,8 @@ Check out some of the harmonization produced by our model:
 ### Our Project
 
 ### Experiment Setup
-* Dataset
+* Dataset  
+ The original dataset used in the paper can be found [here](http://marg.snu.ac.kr/chord_generation/#)
 * Model
 * Loss Function/Error Measure
 
