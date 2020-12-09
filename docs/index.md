@@ -1,4 +1,36 @@
-## Auto-Harmonization of Symbolic Music Using Bidirectional LSTM
+## Auto-Harmonization of Symbolic Melodies using CNNs
+
+
+ Aldo Aguilar, Alex Reneau, Yijing Barry Zhang
+  
+Northwestern University Comp_Sci 496, Deep Learning
+Professor Bryan Pardo
+
+aldoaguilar2022@u.northwestern.edu  
+alexreneau2021@u.northwestern.edu  
+yijingzhang2021@u.northwestern.edu
+
+Check out some of the harmonization produced by our model:  
+[song 1]()  
+[song 2]()  
+ 
+ 
+### Music harmonization and Deep Learning
+
+### Our Project
+
+### Experiment Setup
+* Dataset
+* Model
+* Loss Function/Error Measure
+
+### Results
+
+
+
+
+[paper](www.google.com)
+
 
 
 ### Markdown
@@ -25,9 +57,6 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nub3Ar/AutoHarmonizer/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
