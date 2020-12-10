@@ -9,7 +9,6 @@ Northwestern University Comp_Sci 496, Deep Learning
 Professor Bryan Pardo
 
 
-
 Check out some of the harmonization produced by our model:  
 [song 1]()  
 [song 2]()  
@@ -33,7 +32,11 @@ The dataset we are using is from a [paper](https://arxiv.org/ftp/arxiv/papers/17
 
 ### Results
 
-
+![dataset example](https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize1Accuracy.png?raw=true)  
+![dataset example](https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize2Accuracy.png?raw=true)  
+![dataset example](https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize4Accuracy.png?raw=true)  
+![dataset example](https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize8Accuracy.png?raw=true)  
+![dataset example](https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize12Accuracy.png?raw=true)  
 
 
 [paper](www.google.com)
