@@ -1,4 +1,4 @@
-# Auto-Harmonization of Symbolic Melodies using CNNs
+# Auto-Harmonization of Symbolic Melodies using Convolutional Neural Network and Sliding-window Method
 
 **Members**  
 Aldo Aguilar ([Email](aldoaguilar2022@u.northwestern.edu))  
