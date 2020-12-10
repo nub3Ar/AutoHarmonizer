@@ -63,4 +63,4 @@ Check out some of the harmonization produced by our model, played on a virtual p
 [Deck the halls](https://drive.google.com/file/d/1ZBKi4jh6Yg6OYehjvQRw76V7gREAhXev/view?usp=sharing)
   
 
-[paper](https://github.com/nub3Ar/AutoHarmonizer/blob/main/finalDLPaper.pdf)
+[Link to paper](https://github.com/nub3Ar/AutoHarmonizer/blob/main/finalDLPaper.pdf)
