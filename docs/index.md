@@ -6,7 +6,7 @@ Alex Reneau （[Email](mailto:alexreneau2021@u.northwestern.edu))
 Yijing Barry Zhang ([Email](mailto:yijingzhang2021@u.northwestern.edu))  
 
 **Advisor**  
-Northwestern University Comp_Sci 496, Deep Learning
+Northwestern University Comp_Sci 496, Deep Learning  
 Professor [Bryan Pardo](https://users.cs.northwestern.edu/~pardo/)
  
  
@@ -19,7 +19,7 @@ We would like to build an automatic melody harmonizer from lead sheet music that
 ### Experiment Setup
 #### Dataset  
 ![dataset example](https://github.com/nub3Ar/AutoHarmonizer/blob/main/dataformat.png?raw=true)  
-The dataset we are using is from a [[paper](https://arxiv.org/ftp/arxiv/papers/1712/1712.01011.pdf)] by the Music & Audio Research Group. The dataset consists of 2252 Western songs from many different genres. They are stored in lead sheet formats like shown in the image above. For our purposes, the only features we are considering are the key_mode and the note_root. We are encoding both the nodes and the chords using a simple dictionary such that we have 27 unique integers for both notes and chords: 2 keys (major/minor) * 13 semintones (12 semitones + rest) + 1 padding token. We decided to include the major/minor information in our notes as well for more information about the tone of the piece.  
+The dataset we are using is from a [[paper](https://arxiv.org/ftp/arxiv/papers/1712/1712.01011.pdf)] by the Music & Audio Research Group. The dataset consists of 2252 Western songs from many different genres. They are stored in lead sheet formats like shown in the image above. For our purposes, the only features we are considering are the key_mode and the note_root. We are encoding both the notes and the chords using a simple dictionary such that we have 27 unique integers for both notes and chords: 2 keys (major/minor) * 13 semintones (12 semitones + rest) + 1 padding token. We decided to include the major/minor information in our notes as well for more information about the tone of the piece.  
 
  The original dataset used in the paper can be found [[here](http://marg.snu.ac.kr/chord_generation/#)]
 #### Model/Loss Function 
