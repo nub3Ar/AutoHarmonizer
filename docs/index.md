@@ -5,14 +5,11 @@ Aldo Aguilar ([Email](aldoaguilar2022@u.northwestern.edu))
 Alex Reneau （[Email](alexreneau2021@u.northwestern.edu))  
 Yijing Barry Zhang ([Email](yijingzhang2021@u.northwestern.edu))  
 
-**Advisor**
+**Advisor**  
 Northwestern University Comp_Sci 496, Deep Learning
 Professor [Bryan Pardo](https://users.cs.northwestern.edu/~pardo/)
 
 
-Check out some of the harmonization produced by our model:  
-[song 1]()  
-[song 2]()  
  
  
 ### Music harmonization and Deep Learning
@@ -29,7 +26,18 @@ The dataset we are using is from a [paper](https://arxiv.org/ftp/arxiv/papers/17
  The original dataset used in the paper can be found [here](http://marg.snu.ac.kr/chord_generation/#)
 * **Model**
 * **Loss Function**
-* **Sliding Window Method**
+* **Sliding Window Method**  
+Our task works under the assumption that there are temporal dependencies for each song. Instead of using a recurrent neural network (like the BLSTM that the original paper used), we implemented a sliding window method to capture temporal dependencies within songs. It enforces that each time step includes a specified number of previous time steps in the current decision. 
+
+Our implementation of the sliding window method is unique in the sense that it does not flatten the current and specified previous feature vectors into one feature vector. Instead, we package the current feature vector and the specified number of previous feature vectors into a matrix. The motivation for building this input representation for each time step was that it would provide a data representation that was optimal to feed into a convolutional neural network. 
+
+Below is an example of this approach:  
+original data: [[2, 4, 5], [1, 3, 11, 16], [8, 3, 2], [8, 2, 9], [1], [6]] where each sublist is a measure and each element in those sublists are an encoded semitone (see dataset)  
+if we have a window size of 2, then we will be feeding the following to our model:
+[[2, 4, 5, 0], [1, 3, 11, 16]], [[1, 3, 11, 16], [8, 3, 2, 0]], [[8, 3, 2, 0], [8, 2, 9, 0]], [[8, 2, 9, 0], [1, 0, 0, 0]], [[1, 0, 0, 0], [6, 0, 0, 0]]
+
+
+
 
 ### Results  
 Below we show the training and testing accuracy history using a window size of 1, 2, 4, and 8 measures. 
@@ -38,6 +46,10 @@ Below we show the training and testing accuracy history using a window size of 1
 <img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize4Accuracy.png?raw=true" align="left" height="300" width="450" >
 <img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize8Accuracy.png?raw=true" align="left" height="300" width="450" >
 
+
+Check out some of the harmonization produced by our model:  
+[song 1]()  
+[song 2]()  
 
 [paper](www.google.com)
 
