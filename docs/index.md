@@ -30,13 +30,12 @@ The dataset we are using is from a [paper](https://arxiv.org/ftp/arxiv/papers/17
 * **Loss Function**
 * **Sliding Window Method**
 
-### Results
-
-![dataset example](https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize1Accuracy.png?raw=true)  
-![dataset example](https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize2Accuracy.png?raw=true)  
-![dataset example](https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize4Accuracy.png?raw=true)  
-![dataset example](https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize8Accuracy.png?raw=true)  
-![dataset example](https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize12Accuracy.png?raw=true)  
+### Results  
+Below we show the training and testing accuracy history using a window size of 1, 2, 4, and 8 measures. 
+<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize1Accuracy.png?raw=true" align="left" height="300" width="450" >
+<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize2Accuracy.png?raw=true" align="left" height="300" width="450" >
+<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize4Accuracy.png?raw=true" align="left" height="300" width="450" >
+<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize8Accuracy.png?raw=true" align="left" height="300" width="450" >
 
 
 [paper](www.google.com)
