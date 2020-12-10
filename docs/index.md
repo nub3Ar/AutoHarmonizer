@@ -24,13 +24,14 @@ We would like to build an automatic melody harmonizer from lead sheet music that
 ![dataset example](https://github.com/nub3Ar/AutoHarmonizer/blob/main/dataformat.png?raw=true)  
 The dataset we are using is from a [paper](https://arxiv.org/ftp/arxiv/papers/1712/1712.01011.pdf) by the Music & Audio Research Group. The dataset consists of 2252 Western songs from many different genres. They are stored in lead sheet formats like shown in the image above. For our purposes, the only features we are considering are the key_mode and the note_root.
  The original dataset used in the paper can be found [here](http://marg.snu.ac.kr/chord_generation/#)
-* **Model**
+* **Model**  
+Model diagram:  
+![model diagram]()
+
 * **Loss Function**
 * **Sliding Window Method**  
-Our task works under the assumption that there are temporal dependencies for each song. Instead of using a recurrent neural network (like the BLSTM that the original paper used), we implemented a sliding window method to capture temporal dependencies within songs. It enforces that each time step includes a specified number of previous time steps in the current decision. 
-
-Our implementation of the sliding window method is unique in the sense that it does not flatten the current and specified previous feature vectors into one feature vector. Instead, we package the current feature vector and the specified number of previous feature vectors into a matrix. The motivation for building this input representation for each time step was that it would provide a data representation that was optimal to feed into a convolutional neural network. 
-
+Our task works under the assumption that there are temporal dependencies for each song. Instead of using a recurrent neural network (like the BLSTM that the original paper used), we implemented a sliding window method to capture temporal dependencies within songs. It enforces that each time step includes a specified number of previous time steps in the current decision.  
+Our implementation of the sliding window method is unique in the sense that it does not flatten the current and specified previous feature vectors into one feature vector. Instead, we package the current feature vector and the specified number of previous feature vectors into a matrix. The motivation for building this input representation for each time step was that it would provide a data representation that was optimal to feed into a convolutional neural network.  
 Below is an example of this approach:  
 original data: [[2, 4, 5], [1, 3, 11, 16], [8, 3, 2], [8, 2, 9], [1], [6]] where each sublist is a measure and each element in those sublists are an encoded semitone (see dataset)  
 if we have a window size of 2, then we will be feeding the following to our model:
@@ -40,12 +41,17 @@ if we have a window size of 2, then we will be feeding the following to our mode
 
 
 ### Results  
-Below we show the training and testing accuracy history using a window size of 1, 2, 4, and 8 measures. 
-<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize1Accuracy.png?raw=true" align="left" height="300" width="450" >
-<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize2Accuracy.png?raw=true" align="left" height="300" width="450" >
-<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize4Accuracy.png?raw=true" align="left" height="300" width="450" >
-<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize8Accuracy.png?raw=true" align="left" height="300" width="450" >
+* Quantitative Results  
 
+Below we show the training and testing accuracy history using a window size of 1, 2, 4, and 8 measures. 
+<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize1Accuracy.png?raw=true" align="left" height="300" width="450">
+<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize2Accuracy.png?raw=true" align="left" height="300" width="450">
+<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize4Accuracy.png?raw=true" align="left" height="300" width="450">
+<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize8Accuracy.png?raw=true" align="left" height="300" width="450">  
+
+
+
+* Qualitative Results  
 
 Check out some of the harmonization produced by our model:  
 [song 1]()  
