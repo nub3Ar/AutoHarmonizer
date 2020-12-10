@@ -33,7 +33,7 @@ Our implementation of the sliding window method is unique in the sense that it d
 Below is an example of this approach:  
 original data: [[2, 4, 5], [1, 3, 11, 16], [8, 3, 2], [8, 2, 9], [1], [6]] where each sublist is a measure and each element in those sublists are an encoded semitone (see dataset)  
 if we have a window size of 2, then we will be feeding the following to our model:
-[[2, 4, 5, 0], [1, 3, 11, 16]], [[1, 3, 11, 16], [8, 3, 2, 0]], [[8, 3, 2, 0], [8, 2, 9, 0]], [[8, 2, 9, 0], [1, 0, 0, 0]], [[1, 0, 0, 0], [6, 0, 0, 0]]
+[[2, 4, 5, 0], [1, 3, 11, 16]], [[1, 3, 11, 16], [8, 3, 2, 0]], [[8, 3, 2, 0], [8, 2, 9, 0]], [[8, 2, 9, 0], [1, 0, 0, 0]], [[1, 0, 0, 0], [6, 0, 0, 0]]  
 
 
 
@@ -41,7 +41,7 @@ if we have a window size of 2, then we will be feeding the following to our mode
 ### Results  
 * Quantitative Results  
 
-Below we show the training and testing accuracy history using a window size of 1, 2, 4, and 8 measures. 
+Below we show the training and testing accuracy history using a window size of 1, 2, 4, and 8 measures.  
 <img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize1Accuracy.png?raw=true" align="center" height="300" width="455">
 <img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize2Accuracy.png?raw=true" align="center" height="300" width="455">
 <img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize4Accuracy.png?raw=true" align="center" height="300" width="455">
