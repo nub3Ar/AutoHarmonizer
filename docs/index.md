@@ -62,4 +62,4 @@ Check out some of the harmonization produced by our model:
 [song 1]()  
 [song 2]()  
 
-[paper](www.google.com)
+[paper](https://github.com/nub3Ar/AutoHarmonizer/blob/main/finalDLPaper.pdf?raw=true)
