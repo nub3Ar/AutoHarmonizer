@@ -1,9 +1,9 @@
 # Auto-Harmonization of Symbolic Melodies using Convolutional Neural Network and Sliding-window Method
 
 **Members**  
-Aldo Aguilar ([Email](aldoaguilar2022@u.northwestern.edu))  
-Alex Reneau （[Email](alexreneau2021@u.northwestern.edu))  
-Yijing Barry Zhang ([Email](yijingzhang2021@u.northwestern.edu))  
+Aldo Aguilar ([Email](mailto:aldoaguilar2022@u.northwestern.edu))  
+Alex Reneau （[Email](mailto:alexreneau2021@u.northwestern.edu))  
+Yijing Barry Zhang ([Email](mailto:yijingzhang2021@u.northwestern.edu))  
 
 **Advisor**  
 Northwestern University Comp_Sci 496, Deep Learning
