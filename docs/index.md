@@ -17,19 +17,23 @@ We would like to build an automatic melody harmonizer from lead sheet music that
 
 
 ### Experiment Setup
-* **Dataset**  
+#### Dataset  
 ![dataset example](https://github.com/nub3Ar/AutoHarmonizer/blob/main/dataformat.png?raw=true)  
 The dataset we are using is from a [[paper](https://arxiv.org/ftp/arxiv/papers/1712/1712.01011.pdf)] by the Music & Audio Research Group. The dataset consists of 2252 Western songs from many different genres. They are stored in lead sheet formats like shown in the image above. For our purposes, the only features we are considering are the key_mode and the note_root. We are encoding both the nodes and the chords using a simple dictionary such that we have 27 unique integers for both notes and chords: 2 keys (major/minor) * 13 semintones (12 semitones + rest) + 1 padding token. We decided to include the major/minor information in our notes as well for more information about the tone of the piece.  
 
  The original dataset used in the paper can be found [[here](http://marg.snu.ac.kr/chord_generation/#)]
 * **Model/Loss Function**  
-**Fill in content here**  
+#### Fill in content here 
 Model diagram:  
 <img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/diagram%20(2).png?raw=true" align="center" width="450">
 <br/>
-* **Sliding Window Method**  
+**Fill in content here**  
+
+#### Sliding Window Method
 Our task works under the assumption that there are temporal dependencies for each song. Instead of using a recurrent neural network (like the BLSTM that the original paper used), we implemented a sliding window method to capture temporal dependencies within songs. It enforces that each time step includes a specified number of previous time steps in the current decision.  
-Our implementation of the sliding window method is unique in the sense that it does not flatten the current and specified previous feature vectors into one feature vector. Instead, we package the current feature vector and the specified number of previous feature vectors into a matrix by padding all measures to the same length. This is mainly designed such that it's more efficiently fed into a convolutional neural network  
+
+Our implementation of the sliding window method is unique in the sense that it does not flatten the current and specified previous feature vectors into one feature vector. Instead, we package the current feature vector and the specified number of previous feature vectors into a matrix by padding all measures to the same length. This is mainly designed such that it's more efficiently fed into a convolutional neural network
+
 Below is an example of this approach:  
 original data: [[2, 4, 5], [1, 3, 11, 16], [8, 3, 2], [8, 2, 9], [1], [6]] where each sublist is a measure and each element in those sublists are an encoded semitone (see dataset)  
 if we have a window size of 2, then we will be feeding the following to our model:
