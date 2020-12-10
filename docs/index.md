@@ -1,4 +1,4 @@
-## Auto-Harmonization of Symbolic Melodies using CNNs
+# Auto-Harmonization of Symbolic Melodies using CNNs
 
 **Members**  
 Aldo Aguilar ([Email](aldoaguilar2022@u.northwestern.edu))  
@@ -17,7 +17,6 @@ Harmonization is a crucial part of what makes music enjoyable. [What is harmony?
 
 We would like to build an automatic melody harmonizer from lead sheet music that produces simple chordal accompaniment (in the forms of first inversion triads) for a symbolic melody. We would like to assess this both quantitatively, by checking against the original chord progression, and qualitatively, by assessing whether the chord progression is enjoyable or appropriate for the given melody.
 
-### Our Project
 
 ### Experiment Setup
 * **Dataset**  
@@ -44,12 +43,12 @@ if we have a window size of 2, then we will be feeding the following to our mode
 * Quantitative Results  
 
 Below we show the training and testing accuracy history using a window size of 1, 2, 4, and 8 measures. 
-<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize1Accuracy.png?raw=true" align="left" height="300" width="450">
-<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize2Accuracy.png?raw=true" align="left" height="300" width="450">
-<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize4Accuracy.png?raw=true" align="left" height="300" width="450">
-<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize8Accuracy.png?raw=true" align="left" height="300" width="450">  
+<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize1Accuracy.png?raw=true" align="left" height="300" width="455">
+<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize2Accuracy.png?raw=true" align="left" height="300" width="455">
+<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize4Accuracy.png?raw=true" align="left" height="300" width="455">
+<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize8Accuracy.png?raw=true" align="left" height="300" width="455">
 
-
+discussion
   
 * Qualitative Results  
 
