@@ -23,7 +23,7 @@ The dataset we are using is from a [[paper](https://arxiv.org/ftp/arxiv/papers/1
 
  The original dataset used in the paper can be found [[here](http://marg.snu.ac.kr/chord_generation/#)]
 #### Model/Loss Function 
-#### Fill in content here 
+**Fill in content here** 
 Model diagram:  
 <img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/diagram%20(2).png?raw=true" align="center" width="450">
 <br/>
@@ -52,7 +52,9 @@ Below we show the training and testing accuracy history using a window size of 1
 <img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize8Accuracy.png?raw=true" align="center" height="300" width="400">
 <br/>
 
-**Fill in content here**  
+Utilizing the sliding window method with a convolutional neural network our model was able to achieve a very high accuracy of > 90% predictions for chords on the Music & Audio Research Group’s dataset. We tested a variety of models which utilized different architectures adjusted for each size of the sliding window. As we increased the size of the sliding window we found that the model’s performance would converge much quicker. It seems that by including more temporal information the model is able to learn relationships in the data much faster. 
+
+It is worth noting in the graphs that with a larger sliding window, our validation accuracy increases faster than the training accuracy. We believe that this is because of hte dropout layer in the training process. Because we added droptout in the training process, the training loss includes deliberately introduced noise from those unconnected nodes. In validation, however, the dropout layers are omitted and the model is then able to generate much more reliable results.
   
 * Qualitative Results  
 
