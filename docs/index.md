@@ -23,12 +23,11 @@ The dataset we are using is from a [[paper](https://arxiv.org/ftp/arxiv/papers/1
 
  The original dataset used in the paper can be found [[here](http://marg.snu.ac.kr/chord_generation/#)]
 #### Model/Loss Function 
-**Fill in content here** 
 Model diagram:  
 <img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/diagram%20(2).png?raw=true" align="center" width="450">
 <br/>
 
-Our model is a modified version of the LeNet5 convolutional neural network. Our takes in padded inputs with S examples before it.  The network has two convolutional layers and two linear layers. The model outputs a vector of 27 for each unique pair of (chords, mode). We use the relu activation function and  dropout between each layer with a constant rate of .2. To test the effectiveness we trained a series of 30 models, models which would take in sliding window sizes from 0-29. We trained each model for 500 epochs utilizing the Adam optimize with a learning rate of 0.001. 
+Our model is a modified version of the LeNet5 convolutional neural network. Our takes in padded inputs with S examples before it.  The network has two convolutional layers and two linear layers. The model outputs a vector of 27 for each unique pair of (chords, mode). We use the relu activation function and  dropout between each layer with a constant rate of .2. To test the effectiveness we trained a series of 30 models, models which would take in sliding window sizes from 0-29. We trained each model for 500 epochs utilizing the Adam optimize with a learning rate of 0.001. The loss function used is cross-entropy.  
 
 #### Sliding Window Method
 Our task works under the assumption that there are temporal dependencies for each song. Instead of using a recurrent neural network (like the BLSTM that the original paper used), we implemented a sliding window method to capture temporal dependencies within songs. It enforces that each time step includes a specified number of previous time steps in the current decision.  
@@ -60,7 +59,6 @@ It is worth noting in the graphs that with a larger sliding window, our validati
 * Qualitative Results  
 
 Check out some of the harmonization produced by our model:  
-**Fill in content here**  
 [song 1]()  
 [song 2]()  
 
