@@ -8,8 +8,6 @@ Yijing Barry Zhang ([Email](yijingzhang2021@u.northwestern.edu))
 **Advisor**  
 Northwestern University Comp_Sci 496, Deep Learning
 Professor [Bryan Pardo](https://users.cs.northwestern.edu/~pardo/)
-
-
  
  
 ### Music harmonization and Deep Learning
@@ -26,7 +24,8 @@ The dataset we are using is from a [paper](https://arxiv.org/ftp/arxiv/papers/17
  The original dataset used in the paper can be found [here](http://marg.snu.ac.kr/chord_generation/#)
 * **Model**  
 Model diagram:  
-![model diagram](https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/diagram%20(2).png?raw=true)
+<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/diagram%20(2).png?raw=true" align="center" width="450">
+<br/>
 
 * **Loss Function**
 * **Sliding Window Method**  
