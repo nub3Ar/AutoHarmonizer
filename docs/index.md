@@ -1,14 +1,14 @@
 ## Auto-Harmonization of Symbolic Melodies using CNNs
 
 
- Aldo Aguilar, Alex Reneau, Yijing Barry Zhang
+Aldo Aguilar [Email](aldoaguilar2022@u.northwestern.edu)
+Alex Reneau[Email](alexreneau2021@u.northwestern.edu)
+Yijing Barry Zhang[Email](yijingzhang2021@u.northwestern.edu)
   
 Northwestern University Comp_Sci 496, Deep Learning
 Professor Bryan Pardo
 
-aldoaguilar2022@u.northwestern.edu  
-alexreneau2021@u.northwestern.edu  
-yijingzhang2021@u.northwestern.edu
+
 
 Check out some of the harmonization produced by our model:  
 [song 1]()  
@@ -16,7 +16,7 @@ Check out some of the harmonization produced by our model:
  
  
 ### Music harmonization and Deep Learning
-Harmonization is a crucial part of what makes music enjoyable. The ability to generate harmonies requires a very deep understanding of the underlying structures of music pieces. A deep learning model able to learn to harmonize melodies would then give us great insights into how these models learn the structures of music, which can be instrumental to other musical-audio settings.
+Harmonization is a crucial part of what makes music enjoyable. [What is harmony?](https://www.youtube.com/watch?v=eRkgK4jfi6M&ab_channel=WIRED) The ability to generate harmonies requires a very deep understanding of the underlying structures of music pieces. A deep learning model able to learn to harmonize melodies would then give us great insights into how these models learn the structures of music, which can be instrumental to other musical-audio settings.
 
 We would like to build an automatic melody harmonizer from lead sheet music that produces simple chordal accompaniment (in the forms of first inversion triads) for a symbolic melody. We would like to assess this both quantitatively, by checking against the original chord progression, and qualitatively, by assessing whether the chord progression is enjoyable or appropriate for the given melody.
 
