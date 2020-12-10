@@ -46,10 +46,10 @@ if we have a window size of 2, then we will be feeding the following to our mode
 * Quantitative Results  
 
 Below we show the training and testing accuracy history using a window size of 1, 2, 4, and 8 measures.  
-<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize1Accuracy.png?raw=true" align="center" height="300" width="455">
-<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize2Accuracy.png?raw=true" align="center" height="300" width="455">
-<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize4Accuracy.png?raw=true" align="center" height="300" width="455">
-<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize8Accuracy.png?raw=true" align="center" height="300" width="455">
+<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize1Accuracy.png?raw=true" align="center" height="300" width="400">
+<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize2Accuracy.png?raw=true" align="center" height="300" width="400">
+<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize4Accuracy.png?raw=true" align="center" height="300" width="400">
+<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize8Accuracy.png?raw=true" align="center" height="300" width="400">
 <br/>
 
 **Fill in content here**  
