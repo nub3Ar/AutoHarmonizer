@@ -47,10 +47,10 @@ Below we show the training and testing accuracy history using a window size of 1
 <img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize1Accuracy.png?raw=true" align="left" height="300" width="450">
 <img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize2Accuracy.png?raw=true" align="left" height="300" width="450">
 <img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize4Accuracy.png?raw=true" align="left" height="300" width="450">
-<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize8Accuracy.png?raw=true" align="left" height="300" width="450">
+<img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize8Accuracy.png?raw=true" align="left" height="300" width="450">  
 
 
-
+  
 * Qualitative Results  
 
 Check out some of the harmonization produced by our model:  
