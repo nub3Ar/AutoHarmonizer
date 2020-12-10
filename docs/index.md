@@ -1,12 +1,13 @@
 ## Auto-Harmonization of Symbolic Melodies using CNNs
 
-**Members**
+**Members**  
 Aldo Aguilar ([Email](aldoaguilar2022@u.northwestern.edu))  
 Alex Reneau （[Email](alexreneau2021@u.northwestern.edu))  
 Yijing Barry Zhang ([Email](yijingzhang2021@u.northwestern.edu))  
-  
+
+**Advisor**
 Northwestern University Comp_Sci 496, Deep Learning
-Professor Bryan Pardo
+Professor [Bryan Pardo](https://users.cs.northwestern.edu/~pardo/)
 
 
 Check out some of the harmonization produced by our model:  
