@@ -23,7 +23,7 @@ The dataset we are using is from a [paper](https://arxiv.org/ftp/arxiv/papers/17
 
  The original dataset used in the paper can be found [here](http://marg.snu.ac.kr/chord_generation/#)
 * **Model**  
-**Fill in content here**
+**Fill in content here**  
 Model diagram:  
 <img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/diagram%20(2).png?raw=true" align="center" width="450">
 <br/>
@@ -50,12 +50,12 @@ Below we show the training and testing accuracy history using a window size of 1
 <img src="https://github.com/nub3Ar/AutoHarmonizer/blob/main/docs/WindowSize8Accuracy.png?raw=true" align="center" height="300" width="455">
 <br/>
 
-**Fill in content here**
+**Fill in content here**  
   
 * Qualitative Results  
 
 Check out some of the harmonization produced by our model:  
-**Fill in content here**
+**Fill in content here**  
 [song 1]()  
 [song 2]()  
 
