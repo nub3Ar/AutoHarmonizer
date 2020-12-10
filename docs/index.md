@@ -58,8 +58,8 @@ It is worth noting in the graphs that with a larger sliding window, our validati
   
 * Qualitative Results  
 
-Check out some of the harmonization produced by our model:  
-[song 1]()  
-[song 2]()  
+Check out some of the harmonization produced by our model: (we will be adding more songs soon)
+[Dramaticed Twinkle Twinkle Little Star](https://drive.google.com/file/d/1oL1PNmqufvsj2gj7wf42xWM0mXLdWFzb/view?usp=sharing)  
+  
 
 [paper](https://github.com/nub3Ar/AutoHarmonizer/blob/main/finalDLPaper.pdf)
